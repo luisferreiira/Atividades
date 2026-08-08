@@ -6,7 +6,7 @@ class AreaCirculo
     {
         double raio,area;
         
-        raio = double.Parse(Console.ReadLine());
+        raio = double.Parse(Console.ReadLine()!);
         area = 3.14159 * Math.Pow(raio, 2);
         Console.WriteLine($"A={area:F4}");
     }

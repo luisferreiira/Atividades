@@ -8,7 +8,7 @@ class MediaPositivos
         int quantPositivos = 0;
         for(int i=1; i <=6; i++)
         {
-            num = double.Parse(Console.ReadLine());
+            num = double.Parse(Console.ReadLine()!);
             if (num > 0)
             {
                 media = media + num;

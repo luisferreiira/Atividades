@@ -8,9 +8,9 @@ class Vetor1
         Boolean estaNoVetor = false;
 
         Console.WriteLine("Insira um valor: ");
-        int valorBuscado = int.Parse(Console.ReadLine());
+        int valorBuscado = int.Parse(Console.ReadLine()!);
 
-        for (int i = 0; i <+ numeros.Length; i++)
+        for (int i = 0; i < numeros.Length; i++)
         {
             if (numeros[i] == valorBuscado)
             {
