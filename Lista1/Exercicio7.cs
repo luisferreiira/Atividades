@@ -11,7 +11,7 @@ class Exercicio7
         int tamanhoVetor = int.Parse(Console.ReadLine()!);
 
         int[] vetorGerado = new int[tamanhoVetor];
-        
+
         FuncoesArray.geraArray(vetorGerado, tamanhoVetor);
 
         Console.WriteLine("Insira que Número deseja buscar no Vetor: ");

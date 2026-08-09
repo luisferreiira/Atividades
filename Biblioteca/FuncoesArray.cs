@@ -25,6 +25,15 @@ class FuncoesArray
         }
         Console.WriteLine("Gerado Vetor Aleatório");
     }
+    public static void geraArrayDados(int[] vet, int n)
+    {
+        Random rand = new Random();
+        for (int i = 0; i < n; i++)
+        {
+            vet[i] = rand.Next(1, 7);
+        }
+        Console.WriteLine("Gerado Vetor Aleatório");
+    }
 
     public static int somarElementosArray(int[] vet)
     {
@@ -117,6 +126,18 @@ class FuncoesArray
             Console.WriteLine($"O valor {n} não está no vetor.");
         }
     }
+    public static int[] contarOcorrenciasDados(int[] vet)
+    {
+        int[] ocorrencias = new int[6];
+
+        for (int i = 0; i < vet.Length; i++)
+        {
+            int face = vet[i];
+            ocorrencias[face - 1]++;
+        }
+
+        return ocorrencias;
+    }
 
 
     // (SOBR)ESCRITA DE MÉTODOS PARA VETORES DOUBLE
@@ -184,6 +205,25 @@ class FuncoesArray
         return menorValor;
     }
 
+    public static double calcularNota(string vet)
+    {
+        string[] vetSeparado = vet.Split(' ');
+        double notaFinal = 0, soma = 0, maiorNota, menorNota;
+        double[] notas = new double[vetSeparado.Length];
+
+        for(int i = 0; i < vetSeparado.Length; i++)
+        {
+            notas[i] = double.Parse(vetSeparado[i]);
+            soma += notas[i];
+        }
+
+        maiorNota = buscarMaiorValor(notas);
+        menorNota = buscarMenorValor(notas);
+
+        notaFinal = soma - maiorNota - menorNota;
+
+        return notaFinal;
+    }
     // (SOBR)ESCRITA DE MÉTODOS PARA VETORES STRING / CHAR
 
     public static void printArray(char[] vet)
@@ -245,5 +285,26 @@ class FuncoesArray
 
         return vetComplementar;
     }
+
+
+    public static string decodificarLinguaP(string mensagem)
+    {
+        string resultado = "";
+        for (int i = 0; i < mensagem.Length;)
+        {
+            if(mensagem[i] ==  ' ')
+            {
+                resultado += ' ';
+                i++;
+            }
+            else
+            {
+                resultado += mensagem[i+1];
+                i += 2;
+            }
+        }
+        return resultado;
+    }
+
 
 }
