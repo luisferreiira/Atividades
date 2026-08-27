@@ -1,4 +1,6 @@
 using System;
+using System.Globalization;
+using System.Reflection.PortableExecutable;
 using System.Security;
 namespace Atividades.Biblioteca;
 
@@ -304,6 +306,24 @@ class FuncoesArray
             }
         }
         return resultado;
+    }
+    public static string decodificarMensagemLinguaP(string mensagem)
+    {
+        char[] resultado = new char[mensagem.Length];
+        int j = 0;
+        for (int i=0; i < mensagem.Length; i++)
+        {
+            if(mensagem[i] != 'p')
+            {
+                resultado[j] = mensagem[i];
+                j++;
+            }
+            else if(i != 0 && i != mensagem.Length-1 && mensagem[i+1] == 'p' && mensagem[i-1] == 'p' ){
+                resultado[j] = mensagem[i];
+                j++;
+            }
+        }
+        return new string (resultado);
     }
 
 

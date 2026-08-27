@@ -17,7 +17,5 @@ class Exercicio12
         double notaFinal = FuncoesArray.calcularNota(notas);
 
         Console.WriteLine($"Nota Final: {notaFinal:F1}");
-
-
     }
 }

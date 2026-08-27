@@ -12,7 +12,8 @@ class Exercicio11
         Console.WriteLine("Insira a mensagem criptografada: ");
         string mensagem = Console.ReadLine()!;
 
-        string mensagemDecodificada = FuncoesArray.decodificarLinguaP(mensagem);
+        // string mensagemDecodificada = FuncoesArray.decodificarLinguaP(mensagem);
+        string mensagemDecodificada = FuncoesArray.decodificarMensagemLinguaP(mensagem);
 
         Console.WriteLine($"Mensagem Decodificada: {mensagemDecodificada}");
     }
