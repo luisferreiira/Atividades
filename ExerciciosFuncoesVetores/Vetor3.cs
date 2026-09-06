@@ -9,9 +9,9 @@ class Vetor3
 {
     static void Main()
     {
-        int n = int.Parse(Console.ReadLine());
+        int n = int.Parse(Console.ReadLine()!);
 
-        string linha = Console.ReadLine();
+        string linha = Console.ReadLine()!;
         string[] partes = linha.Split(' ');
 
         int[] x = new int[n];

@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>Lista2.Exercicio2</StartupObject>
+    <StartupObject>Lista2.Exercicio11</StartupObject>
   </PropertyGroup>
 
 </Project>
