@@ -12,11 +12,11 @@ class Exercicio2
 
         int[] vetorGerado = new int[tamanhoVetor];
         
-        FuncoesArray.geraArray(vetorGerado, tamanhoVetor);
+        Vetor.geraArray(vetorGerado, tamanhoVetor);
 
-        FuncoesArray.printArray(vetorGerado);
+        Vetor.printArray(vetorGerado);
 
-        int quantidadeImpares = FuncoesArray.contarImparesArray(vetorGerado);
+        int quantidadeImpares = Vetor.contarImparesArray(vetorGerado);
 
         Console.WriteLine($"Quantidade de Ímpares no Vetor: {quantidadeImpares}"); 
     }

@@ -13,7 +13,7 @@ class Exercicio11
         string mensagem = Console.ReadLine()!;
 
         // string mensagemDecodificada = FuncoesArray.decodificarLinguaP(mensagem);
-        string mensagemDecodificada = FuncoesArray.decodificarMensagemLinguaP(mensagem);
+        string mensagemDecodificada = Vetor.decodificarMensagemLinguaP(mensagem);
 
         Console.WriteLine($"Mensagem Decodificada: {mensagemDecodificada}");
     }

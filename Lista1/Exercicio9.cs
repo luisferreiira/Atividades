@@ -10,12 +10,12 @@ class Exercicio9
         Console.WriteLine("Insira quantidade de elementos do vetor: ");
         int tamanhoVetor = int.Parse(Console.ReadLine()!);
 
-        char[] fitaOriginal = FuncoesArray.lerArray(tamanhoVetor);
+        char[] fitaOriginal = Vetor.lerArray(tamanhoVetor);
 
         Console.WriteLine("DNA Complementar");
 
-        char[] fitaComplementar = FuncoesArray.geraDnaComplementar(fitaOriginal);
+        char[] fitaComplementar = Vetor.geraDnaComplementar(fitaOriginal);
 
-        FuncoesArray.printArray(fitaComplementar);
+        Vetor.printArray(fitaComplementar);
     }
 }

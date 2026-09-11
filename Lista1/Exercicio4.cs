@@ -12,11 +12,11 @@ class Exercicio4
 
         double[] vetorGerado = new double[tamanhoVetor];
         
-        FuncoesArray.geraArray(vetorGerado, tamanhoVetor);
+        Vetor.geraArray(vetorGerado, tamanhoVetor);
 
-        FuncoesArray.printArray(vetorGerado);
+        Vetor.printArray(vetorGerado);
 
-        double menorValor = FuncoesArray.buscarMenorValor(vetorGerado);
+        double menorValor = Vetor.buscarMenorValor(vetorGerado);
 
         Console.WriteLine($"Menor Valor Encontrado: {menorValor:F2}"); 
     }

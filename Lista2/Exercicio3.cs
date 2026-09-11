@@ -21,13 +21,13 @@ namespace Lista2
 
             int[] diagonal_principal = new int[linhas];
 
-            FuncoesMatriz.gerarMatriz(matriz);
-            FuncoesMatriz.mostrarMatriz(matriz);
+            Matriz.gerarMatriz(matriz);
+            Matriz.mostrarMatriz(matriz);
 
-            diagonal_principal = FuncoesMatriz.obterDiagonalPrincipal(matriz);
+            diagonal_principal = Matriz.obterDiagonalPrincipal(matriz);
 
             Console.WriteLine("Diagonal Principal: ");
-            FuncoesArray.printArray(diagonal_principal);
+            Vetor.printArray(diagonal_principal);
             
 
         }

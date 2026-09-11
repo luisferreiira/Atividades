@@ -14,7 +14,7 @@ class Exercicio12
         Console.WriteLine("Insira as notas: ");
         string notas = Console.ReadLine()!;
         
-        double notaFinal = FuncoesArray.calcularNota(notas);
+        double notaFinal = Vetor.calcularNota(notas);
 
         Console.WriteLine($"Nota Final: {notaFinal:F1}");
     }

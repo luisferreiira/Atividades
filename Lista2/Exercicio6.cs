@@ -29,8 +29,8 @@ namespace Lista2
 
             int[,] matrizB = new int[linhasB, colunasB];
 
-            FuncoesMatriz.gerarMatriz(matrizA);
-            FuncoesMatriz.gerarMatriz(matrizB);
+            Matriz.gerarMatriz(matrizA);
+            Matriz.gerarMatriz(matrizB);
 
             String operacao = " ";
 
@@ -49,38 +49,38 @@ namespace Lista2
                 switch (operacao)
                 {
                     case "a":
-                        resultante = FuncoesMatriz.somarDuasMatrizes(matrizA, matrizB)!;
+                        resultante = Matriz.somarDuasMatrizes(matrizA, matrizB)!;
                         if (resultante != null)
                         {
                             Console.WriteLine("Matriz A+B:");
-                            FuncoesMatriz.mostrarMatriz(resultante);
+                            Matriz.mostrarMatriz(resultante);
                         }
                         break;
                     case "b":
-                        resultante = FuncoesMatriz.subtrairMatrizAdeMatrizB(matrizA, matrizB)!;
+                        resultante = Matriz.subtrairMatrizAdeMatrizB(matrizA, matrizB)!;
                         if (resultante != null)
                         {
                             Console.WriteLine("Matriz A-B:");
-                            FuncoesMatriz.mostrarMatriz(resultante);
+                            Matriz.mostrarMatriz(resultante);
                         }
                         break;
                     case "c":
                         Console.WriteLine("Insira uma constante para somar às matrizes: ");
                         int constante = int.Parse(Console.ReadLine()!);
 
-                        matrizA = FuncoesMatriz.somarNumeroConstanteNaMatriz(matrizA, constante);
+                        matrizA = Matriz.somarNumeroConstanteNaMatriz(matrizA, constante);
                         Console.WriteLine("Matriz A:");
-                        FuncoesMatriz.mostrarMatriz(matrizA);
+                        Matriz.mostrarMatriz(matrizA);
 
-                        matrizB = FuncoesMatriz.somarNumeroConstanteNaMatriz(matrizB, constante);
+                        matrizB = Matriz.somarNumeroConstanteNaMatriz(matrizB, constante);
                         Console.WriteLine("Matriz B:");
-                        FuncoesMatriz.mostrarMatriz(matrizB);
+                        Matriz.mostrarMatriz(matrizB);
                         break;
                     case "d":
                         Console.WriteLine("Matriz A:");
-                        FuncoesMatriz.mostrarMatriz(matrizA);
+                        Matriz.mostrarMatriz(matrizA);
                         Console.WriteLine("Matriz B:");
-                        FuncoesMatriz.mostrarMatriz(matrizB);
+                        Matriz.mostrarMatriz(matrizB);
                         break;
                     case "s":
                         Console.WriteLine("Encerrando...");

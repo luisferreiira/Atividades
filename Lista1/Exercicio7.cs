@@ -12,13 +12,13 @@ class Exercicio7
 
         int[] vetorGerado = new int[tamanhoVetor];
 
-        FuncoesArray.geraArray(vetorGerado, tamanhoVetor);
+        Vetor.geraArray(vetorGerado, tamanhoVetor);
 
         Console.WriteLine("Insira que Número deseja buscar no Vetor: ");
         int numeroParaBuscar = int.Parse(Console.ReadLine()!);
 
-        FuncoesArray.contarOcorrencias(vetorGerado, numeroParaBuscar);
+        Vetor.contarOcorrencias(vetorGerado, numeroParaBuscar);
 
-        FuncoesArray.printArray(vetorGerado);
+        Vetor.printArray(vetorGerado);
     }
 }

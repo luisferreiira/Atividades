@@ -9,14 +9,14 @@ class Exercicio8
         Console.WriteLine("Insira quantidade de elementos do vetor: ");
         int tamanhoVetor = int.Parse(Console.ReadLine()!);
 
-        char[] vetorCaracteres = FuncoesArray.lerArray(tamanhoVetor);
-        char[] vetorCaracteresInvertido = FuncoesArray.inverterArray(vetorCaracteres);
+        char[] vetorCaracteres = Vetor.lerArray(tamanhoVetor);
+        char[] vetorCaracteresInvertido = Vetor.inverterArray(vetorCaracteres);
 
-        FuncoesArray.printArray(vetorCaracteres);
+        Vetor.printArray(vetorCaracteres);
 
         Console.WriteLine("Vetor Invertido");
 
-        FuncoesArray.printArray(vetorCaracteresInvertido);
+        Vetor.printArray(vetorCaracteresInvertido);
 
     }
 }

@@ -20,10 +20,10 @@ namespace Lista2
 
             int maiorValor;
 
-            FuncoesMatriz.gerarMatriz(matriz);
-            FuncoesMatriz.mostrarMatriz(matriz);
+            Matriz.gerarMatriz(matriz);
+            Matriz.mostrarMatriz(matriz);
 
-            maiorValor = FuncoesMatriz.obterMaiorValor(matriz);
+            maiorValor = Matriz.obterMaiorValor(matriz);
 
             Console.WriteLine("Maior Valor da Matriz: " + maiorValor);
 

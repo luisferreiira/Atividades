@@ -2,7 +2,7 @@ using System;
 
 namespace Atividades.Biblioteca;
 
-public class FuncoesMatriz
+public class Matriz
 {
     public static void lerMatriz(int[,] matriz)
     {
@@ -249,7 +249,7 @@ public class FuncoesMatriz
     public static int obterSomaDiagonalPrincipal(int[,] matriz)
     {
         int somaDiagonalPrincipal = 0;
-        int[] diagonalPrincipal = FuncoesMatriz.obterDiagonalPrincipal(matriz);
+        int[] diagonalPrincipal = Matriz.obterDiagonalPrincipal(matriz);
         for (int i = 0; i < diagonalPrincipal.Length; i++)
             somaDiagonalPrincipal += diagonalPrincipal[i];
         return somaDiagonalPrincipal;
@@ -257,9 +257,49 @@ public class FuncoesMatriz
     public static int obterSomaDiagonalSecundaria(int[,] matriz)
     {
         int somaDiagonalSecundaria = 0;
-        int[] diagonalSecundaria = FuncoesMatriz.obterDiagonalSecundaria(matriz);
+        int[] diagonalSecundaria = Matriz.obterDiagonalSecundaria(matriz);
         for (int i = 0; i < diagonalSecundaria.Length; i++)
             somaDiagonalSecundaria += diagonalSecundaria[i];
         return somaDiagonalSecundaria;
+    }
+
+    public static int[,] carregarMatriz(string caminhoArquivo)
+    {
+        string[] linhas = File.ReadAllLines(caminhoArquivo);
+        int numLinhas = linhas.Length;
+        int numColunas = linhas[0].Split(',').Length;
+
+        int[,] matriz = new int[numLinhas, numColunas];
+
+        for (int i = 0; i < numLinhas; i++)
+        {
+            string[] valores = linhas[i].Split(',');
+            for (int j = 0; j < numColunas; j++)
+            {
+                matriz[i, j] = int.Parse(valores[j]);
+            }
+        }
+        return matriz;
+    }
+
+    public static int verificarOcorrencias(int[,] matriz, int valorBuscado)
+    {
+        int linhas = matriz.GetLength(0);  // Obtém o número de linhas
+        int colunas = matriz.GetLength(1); // Obtém o número de colunas
+        int ocorrencias = 0;
+
+        for (int i = 0; i < linhas; i++)
+        {
+            for (int j = 0; j < colunas; j++)
+            {
+                if (matriz[i, j] == valorBuscado)
+                {
+                    Console.WriteLine($" -> Ocorrência encontrada no Setor [{i+1}, {j+1}]");
+                    ocorrencias++;
+                }
+            }
+        }
+
+        return ocorrencias;
     }
 }

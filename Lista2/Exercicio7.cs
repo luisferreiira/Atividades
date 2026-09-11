@@ -26,19 +26,19 @@ namespace Lista2
 
             int[,] matrizB = new int[linhasB, colunasB];
 
-            FuncoesMatriz.gerarMatriz(matrizA);
-            FuncoesMatriz.gerarMatriz(matrizB);
+            Matriz.gerarMatriz(matrizA);
+            Matriz.gerarMatriz(matrizB);
 
             Console.WriteLine("Matriz A:");
-            FuncoesMatriz.mostrarMatriz(matrizA);
+            Matriz.mostrarMatriz(matrizA);
             Console.WriteLine("Matriz B:");
-            FuncoesMatriz.mostrarMatriz(matrizB);
+            Matriz.mostrarMatriz(matrizB);
 
-            int[,] resultante = FuncoesMatriz.somarDuasMatrizes(matrizA, matrizB)!;
+            int[,] resultante = Matriz.somarDuasMatrizes(matrizA, matrizB)!;
             if (resultante != null)
             {
                 Console.WriteLine("Matriz A+B:");
-                FuncoesMatriz.mostrarMatriz(resultante);
+                Matriz.mostrarMatriz(resultante);
             }
 
         }

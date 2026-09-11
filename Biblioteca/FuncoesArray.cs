@@ -4,7 +4,7 @@ using System.Reflection.PortableExecutable;
 using System.Security;
 namespace Atividades.Biblioteca;
 
-class FuncoesArray
+class Vetor
 {
 
     //MÉTODOS PARA VETORES INT
@@ -229,6 +229,15 @@ class FuncoesArray
     // (SOBR)ESCRITA DE MÉTODOS PARA VETORES STRING / CHAR
 
     public static void printArray(char[] vet)
+    {
+        Console.WriteLine("Mostrando Vetor");
+        for (int i = 0; i < vet.Length; i++)
+        {
+            Console.Write(vet[i] + " | ");
+        }
+        Console.WriteLine();
+    }
+    public static void printArray(string[] vet)
     {
         Console.WriteLine("Mostrando Vetor");
         for (int i = 0; i < vet.Length; i++)

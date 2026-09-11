@@ -15,16 +15,16 @@ class Exercicio10
         int[] resultadosDados = new int[tamanhoVetor];
         int[] ocorrencias = new int[6];
 
-        FuncoesArray.geraArrayDados(resultadosDados, tamanhoVetor);
+        Vetor.geraArrayDados(resultadosDados, tamanhoVetor);
 
-        FuncoesArray.printArray(resultadosDados);
+        Vetor.printArray(resultadosDados);
 
-        ocorrencias = FuncoesArray.contarOcorrenciasDados(resultadosDados);
+        ocorrencias = Vetor.contarOcorrenciasDados(resultadosDados);
 
         Console.WriteLine("Faces");
         Console.WriteLine("1 | 2 | 3 | 4 | 5 | 6 |");
 
         Console.WriteLine("Ocorrências");
-        FuncoesArray.printArray(ocorrencias);
+        Vetor.printArray(ocorrencias);
     }
 }

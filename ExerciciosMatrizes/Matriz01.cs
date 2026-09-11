@@ -15,17 +15,17 @@ class Matriz01
 
         // Testando a função leia
         Console.WriteLine("\nDigite os elementos da matriz:");
-        FuncoesMatriz.lerMatriz(matriz);
+        Matriz.lerMatriz(matriz);
 
         Console.WriteLine("\nMatriz digitada:");
-        FuncoesMatriz.mostrarMatriz(matriz);
+        Matriz.mostrarMatriz(matriz);
 
 
         // Testando a função gera
         Console.WriteLine("\nGerando uma matriz com valores aleatórios...");
-        FuncoesMatriz.gerarMatriz(matriz);
+        Matriz.gerarMatriz(matriz);
         Console.WriteLine("\nMatriz gerada aleatoriamente:");
-        FuncoesMatriz.mostrarMatriz(matriz);
+        Matriz.mostrarMatriz(matriz);
 
     }
 

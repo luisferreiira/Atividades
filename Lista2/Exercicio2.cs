@@ -21,10 +21,10 @@ namespace Lista2
 
             int maiorValor;
 
-            FuncoesMatriz.gerarMatriz(matriz);
-            FuncoesMatriz.mostrarMatriz(matriz);
+            Matriz.gerarMatriz(matriz);
+            Matriz.mostrarMatriz(matriz);
 
-            maiorValor = FuncoesMatriz.obterMenorValor(matriz);
+            maiorValor = Matriz.obterMenorValor(matriz);
 
             Console.WriteLine("Menor Valor da Matriz: " + maiorValor);
 

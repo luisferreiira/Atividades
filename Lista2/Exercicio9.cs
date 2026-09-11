@@ -26,12 +26,12 @@ namespace Lista2
 
             int[,] matriz = new int[linhas, colunas];
 
-            FuncoesMatriz.gerarMatriz(matriz);
+            Matriz.gerarMatriz(matriz);
             Console.WriteLine("Matriz das Tropas");
-            FuncoesMatriz.mostrarMatriz(matriz);
+            Matriz.mostrarMatriz(matriz);
 
             Console.WriteLine("Força Total por Região");
-            FuncoesMatriz.mostrarMatriz(FuncoesMatriz.somarLinhas(matriz));
+            Matriz.mostrarMatriz(Matriz.somarLinhas(matriz));
 
         }
     }

@@ -20,13 +20,13 @@ namespace Lista2
 
             int[,] matriz = new int[linhas, colunas];
 
-            FuncoesMatriz.gerarMatriz(matriz);
-            FuncoesMatriz.mostrarMatriz(matriz);
+            Matriz.gerarMatriz(matriz);
+            Matriz.mostrarMatriz(matriz);
 
             Console.WriteLine("Insira um número inteiro para buscar na matriz: ");
             int numeroBuscado = int.Parse(Console.ReadLine()!);
 
-            int ocorrenciasNumero = FuncoesMatriz.contarOcorrenciasNumero(matriz, numeroBuscado);
+            int ocorrenciasNumero = Matriz.contarOcorrenciasNumero(matriz, numeroBuscado);
 
             Console.WriteLine($"{numeroBuscado} teve {ocorrenciasNumero} ocorrências ");         
 

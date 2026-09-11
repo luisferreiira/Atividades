@@ -20,13 +20,13 @@ namespace Lista2
 
             int[] diagonal_secundaria = new int[linhas];
 
-            FuncoesMatriz.gerarMatriz(matriz);
-            FuncoesMatriz.mostrarMatriz(matriz);
+            Matriz.gerarMatriz(matriz);
+            Matriz.mostrarMatriz(matriz);
 
-            diagonal_secundaria = FuncoesMatriz.obterDiagonalSecundaria(matriz);
+            diagonal_secundaria = Matriz.obterDiagonalSecundaria(matriz);
 
             Console.WriteLine("Diagonal Secundária: ");
-            FuncoesArray.printArray(diagonal_secundaria);
+            Vetor.printArray(diagonal_secundaria);
             
 
         }

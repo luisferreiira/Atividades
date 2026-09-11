@@ -11,11 +11,11 @@ class Exercicio3
 
         double[] vetorGerado = new double[tamanhoVetor];
         
-        FuncoesArray.geraArray(vetorGerado, tamanhoVetor);
+        Vetor.geraArray(vetorGerado, tamanhoVetor);
 
-        FuncoesArray.printArray(vetorGerado);
+        Vetor.printArray(vetorGerado);
 
-        double maiorValor = FuncoesArray.buscarMaiorValor(vetorGerado);
+        double maiorValor = Vetor.buscarMaiorValor(vetorGerado);
 
         Console.WriteLine($"Maior Valor Encontrado: {maiorValor:F2}"); 
     }

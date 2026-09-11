@@ -27,11 +27,11 @@ namespace Lista2
             int[,] matriz = new int[ordem, ordem];
 
             Console.WriteLine("Mapa do Tesouro (Moedas x Região)");
-            FuncoesMatriz.gerarMatriz(matriz);
-            FuncoesMatriz.mostrarMatriz(matriz);
+            Matriz.gerarMatriz(matriz);
+            Matriz.mostrarMatriz(matriz);
 
-            int somaDiagonalPrincipal = FuncoesMatriz.obterSomaDiagonalPrincipal(matriz);
-            int somaDiagonalSecundaria = FuncoesMatriz.obterSomaDiagonalSecundaria(matriz);
+            int somaDiagonalPrincipal = Matriz.obterSomaDiagonalPrincipal(matriz);
+            int somaDiagonalSecundaria = Matriz.obterSomaDiagonalSecundaria(matriz);
 
             Console.WriteLine("Soma da Diagonal Principal:" + somaDiagonalPrincipal);
             Console.WriteLine("Soma da Diagonal Secundária:" + somaDiagonalSecundaria);

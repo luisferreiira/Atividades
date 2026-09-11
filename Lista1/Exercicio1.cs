@@ -12,11 +12,11 @@ class Exercicio1
 
         int[] vetorGerado = new int[tamanhoVetor];
         
-        FuncoesArray.geraArray(vetorGerado, tamanhoVetor);
+        Vetor.geraArray(vetorGerado, tamanhoVetor);
 
-        FuncoesArray.printArray(vetorGerado);
+        Vetor.printArray(vetorGerado);
 
-        int somaVetor = FuncoesArray.somarElementosArray(vetorGerado);
+        int somaVetor = Vetor.somarElementosArray(vetorGerado);
 
         Console.WriteLine($"Soma dos Valores do Vetor: {somaVetor}"); 
 

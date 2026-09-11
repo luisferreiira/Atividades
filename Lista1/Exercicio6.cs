@@ -14,20 +14,20 @@ class Exercicio6
         int[] vetorGerado2 = new int[tamanhoVetor];
         int[] vetorResultante = new int[tamanhoVetor];
         
-        FuncoesArray.geraArray(vetorGerado, tamanhoVetor);
-        FuncoesArray.printArray(vetorGerado);
+        Vetor.geraArray(vetorGerado, tamanhoVetor);
+        Vetor.printArray(vetorGerado);
 
         Console.WriteLine();
 
-        FuncoesArray.geraArray(vetorGerado2, tamanhoVetor);
-        FuncoesArray.printArray(vetorGerado);
+        Vetor.geraArray(vetorGerado2, tamanhoVetor);
+        Vetor.printArray(vetorGerado);
 
         Console.WriteLine();
 
-        vetorResultante = FuncoesArray.multiplicaVetores(vetorGerado, vetorGerado2, tamanhoVetor);
+        vetorResultante = Vetor.multiplicaVetores(vetorGerado, vetorGerado2, tamanhoVetor);
 
         Console.WriteLine();
 
-        FuncoesArray.printArray(vetorResultante);
+        Vetor.printArray(vetorResultante);
     }
 }
