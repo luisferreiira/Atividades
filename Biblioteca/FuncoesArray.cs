@@ -4,10 +4,20 @@ using System.Reflection.PortableExecutable;
 using System.Security;
 namespace Atividades.Biblioteca;
 
-class Vetor
+public class Vetor
 {
 
     //MÉTODOS PARA VETORES INT
+
+    public static void lerArray(int[] vetor)
+    {
+            for (int i = 0; i < vetor.Length; i++)
+            {
+                Console.Write($"Elemento [{i}]: ");
+                vetor[i] = int.Parse(Console.ReadLine()!);
+            } 
+        
+    }
     public static void printArray(int[] vet)
     {
         Console.WriteLine("Mostrando Vetor");
